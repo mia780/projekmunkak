@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Rendezés névsor szerint" Height="600" Width="800">
+    <Grid>
+        <Label x:Name="elvalasztva"
+                 Content="Keresznevek, elválasztva"
+                   FontSize="12" Margin="30,10,537,387" RenderTransformOrigin="0.5,0.5"/>
+        <TextBox x:Name="bevitel" Margin="30,47,109,0" Height="21" VerticalAlignment="Top"
+                   FontSize="12"
+            />
+        <Label x:Name="neveklistaja"
+          Content="Nevek listája" Margin="30,73,570,478" FontSize="12"/>
+        <ListBox Name="listafelsorol" Width="200" Margin="30,124,570,170" />
+        
+        <Label x:Name="Nevsorba_rendezz"
+          Content="Névsorba rendezz" Margin="491,74,109,479" FontSize="12"/>
+        <ListBox Name="nevsor" Width="200" Margin="491,124,109,170" />
+        <Button x:Name="szavakra_bontas"
+                Content="Szavakra bontás"
+            Margin="48,448,588,100" Click="szavakra_bontas_Click"/>
+        <Button x:Name="nevsorba_rendezz"
+                Content="Rendez"
+            Margin="521,448,132,100" RenderTransformOrigin="0.731,0.421" Click="nevsorba_rendezz_Click"/>
+
+
+
+
+    </Grid>
+</Window>
